@@ -17,8 +17,8 @@ class EventbriteSpider(scrapy.Spider):
 
     base_url = 'https://www.eventbrite.com/d/united-states/african-american/?page={}'
 
-    current_page = 61
-    end_page = 80
+    current_page = 1
+    end_page = 50
     start_urls = [base_url.format(current_page)]
 
     def parse(self, response):
